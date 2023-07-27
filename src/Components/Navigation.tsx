@@ -1,4 +1,4 @@
-import { Col, Container, Navbar, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import gitIconLottie from '../Assets/Lotties/github-2.json';
 import linkedInLottie from '../Assets/Lotties/linkedin.json'
 import Lottie from 'react-lottie';
@@ -34,7 +34,6 @@ export const Navigation = () => {
                         <a href={'https://github.com/DisAP332'} target="_blank">
                             <Lottie 
                             isClickToPauseDisabled={true}
-                            className='mt-3'
                             options={gitLottieOptions}
                             height={50}
                             width={50}
@@ -47,7 +46,6 @@ export const Navigation = () => {
                     <a href={'https://linkedin.com/in/jordan-bell-135205251/'} target="_blank">
                         <Lottie 
                         isClickToPauseDisabled={true}
-                        className='mt-3'
                         options={linkedInLottieOptions}
                         height={50}
                         width={50}
@@ -71,7 +69,6 @@ export const Navigation = () => {
                                 <a href={'https://github.com/DisAP332'} target="_blank">
                                     <Lottie 
                                     isClickToPauseDisabled={true}
-                                    className='mt-3'
                                     options={gitLottieOptions}
                                     height={35}
                                     width={35}
@@ -80,7 +77,6 @@ export const Navigation = () => {
                                 <a href={'https://linkedin.com/in/jordan-bell-135205251/'} target="_blank">
                                     <Lottie 
                                     isClickToPauseDisabled={true}
-                                    className='mt-3'
                                     options={linkedInLottieOptions}
                                     height={38}
                                     width={38}
