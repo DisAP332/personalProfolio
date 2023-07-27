@@ -200,6 +200,10 @@ h1 {
   margin: 10px;
 }
 
+.iconHelper > img:hover {
+  transform: translateY(-10px);
+}
+
 .row {
   margin-right: 0px;
 }
