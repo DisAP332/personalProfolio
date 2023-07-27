@@ -24,17 +24,17 @@ import linuxIcon from '../Assets/Icons/linux.svg'
 export const Home = () => {
     return (
         <>
-            <Container>
+            <Container style={{color: 'white'}}>
                 <Row>
-                    <h2 className='mt-3 coolFont4' style={{fontSize: 'calc(1rem + 4vw)', color: 'white'}}>
+                    <h2 className='mt-3 coolFont4'>
                         Software extraordiare?
                     </h2>
                     <div className="d-flex justify-content-end">
-                        <h3 className="nameFont" style={{color: 'white'}}> ... Maybe! </h3>
+                        <h2 className="nameFont"> ... Maybe! </h2>
                     </div>
                 </Row>
                 <Row>
-                    <h2 className='coolFont1' style={{color: 'white', fontSize: 'calc(1rem + 3vw'}}> Some skills in my software toolbelt </h2>
+                    <h1 className='coolFont1'> Some skills in my software toolbelt </h1>
                 </Row>
             </Container>
 

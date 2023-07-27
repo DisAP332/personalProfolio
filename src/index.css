@@ -6,8 +6,16 @@ body {
   min-height: 100vh;
 }
 
-* {
-  margin-right: none;
+h1 {
+  font-size: 'calc(1.2rem + 5vw)' !important
+}
+
+h2 {
+  font-size: 'calc(1rem + 2vw)'
+}
+
+h2, h3 {
+  margin-bottom: 0px !important;
 }
 
 :root {
@@ -95,18 +103,15 @@ h1 {
 /* cool button stuff */
 
 .hireMeButton {
-  width: 200px;
-  height: 90%;
+  width: 100px;
+  height: 80%;
   box-shadow: 0px 0px 0px 0px black;
   border: 2px solid black;
   border-radius: 30px;
-  font-size: 20px;
+  font-size: 10px;
   font-family: coolFont3;
   color: white;
   background: linear-gradient(27deg, rgba(236,10,87,1) 30%, rgba(68,157,47,0.7511379551820728) 46%, rgba(81,79,219,0.8995973389355743) 60%, rgba(210,79,219,0.8995973389355743) 80%);
-}
-
-.hireMeButton {
   padding: 0.6em 2em;
   border: 2px solid white;
   outline: none;
@@ -192,8 +197,8 @@ h1 {
 }
 
 .iconSizer {
-  height: 80px;
-  width: 80px;
+  height: calc(4rem + 1vw);
+  width: calc(4rem + 1vw);
 }
 
 .iconHelper > img {
