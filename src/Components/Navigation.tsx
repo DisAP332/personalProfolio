@@ -54,7 +54,7 @@ export const Navigation = () => {
                 </Col>
 
                 <Col className="d-none d-md-flex justify-content-center" style={{height: '8vh'}}>
-                    <div className="d-flex flex-row mt-1">
+                    <div className="d-flex flex-row mt-2">
                     <h3 className="ml-3 text-center nameFont">
                         Jordan           
                     </h3>
