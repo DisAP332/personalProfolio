@@ -109,18 +109,19 @@ export const Home = () => {
                 </Col>
                 <Container style={{maxHeight: '200px'}} className="overflow-auto mb-3">
                     <p className="coolFont4" style={{color: 'white'}}>
-                        My love and passion in life is for technology. It evelops our world, our every day lives, and 
-                        integrates more and more into what it means to be a human of the 21st century. My goal is to be
-                        a hand in the evolution of technology and in turn the evolution of man alongside it! As our technology
-                        grows we unlock new fasinating ways to interact with the world around us and it is the catalyst that makes 
-                        the impossible, the possible! I am dedicated and enamoured by the constant flow of new challenges and new
-                        skills to master, I will never stop growing and learning, its what I love to do!
+                    My love and passion in life are for technology. It envelops our world, our every-day lives, and
+                    integrates more and more into what it means to be a human in the 21st century. My goal is to be
+                    a hand in the evolution of technology and, in turn, the evolution of man alongside it! As our technology grows, we unlock exciting new ways to interact with the world around us. It is the catalyst that makes
+                    The impossible - possible! I am dedicated and enamored by the constant flow of new challenges and new
+                    skills to master, I will never stop growing and learning; it's what I love to do!
                     </p>
                 </Container>
             </Container>
 
 
             {/* end about me section */}
+
+            {/* begin footer */}
 
             <Container>
                 <div className="d-flex flex-row justify-content-center">
@@ -134,5 +135,7 @@ export const Home = () => {
                 </div>
             </Container>
         </>
+
+        // end footer
     )
 }

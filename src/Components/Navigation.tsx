@@ -24,7 +24,7 @@ export const Navigation = () => {
     // }
 
     return (
-        <Container style={{backgroundColor: 'teal', maxWidth: 'none'}}>
+        <Container style={{backgroundColor: 'teal', maxWidth: 'none', height: '8vh'}}>
 
 
             <Row className="d-flex">
@@ -54,12 +54,12 @@ export const Navigation = () => {
                     </a>
                 </Col>
 
-                <Col className="d-none d-md-flex justify-content-center" style={{height: '8vh'}}>
+                <Col className="d-none d-md-flex justify-content-center align-items-center">
                     <div className="d-flex flex-row mt-2">
-                    <h3 className="ml-3 text-center nameFont">
+                    <h3 className="ml-3 text-center nameFont" style={{fontSize: '4vh'}}>
                         Jordan           
                     </h3>
-                    <h3 className="text-center ml-2 nameFont2" style={{textAlign: 'center'}}>Bell</h3>
+                    <h3 className="text-center ml-2 nameFont2" style={{textAlign: 'center', fontSize: '4.5vh'}}>Bell</h3>
                     </div>
                 </Col>
 
@@ -72,7 +72,7 @@ export const Navigation = () => {
                                 autoplay
                                 loop={true}
                                 src={gitIconLottie}
-                                style={{ height: '32px', width: '32px' }}
+                                style={{ height: '7vh', width: '7vh' }}
                                 >
                                 </Player>
                                 </a>
@@ -81,7 +81,7 @@ export const Navigation = () => {
                                 autoplay
                                 loop={true}
                                 src={linkedInLottie}
-                                style={{ height: '35px', width: '35px' }}
+                                style={{ height: '7.5vh', width: '7.5vh' }}
                                 >
                                 </Player>
                                 </a>
