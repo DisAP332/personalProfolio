@@ -56,7 +56,7 @@ export const Navigation = () => {
 
                 <Col className="d-none d-md-flex justify-content-center align-items-center">
                     <div className="d-flex flex-row mt-2">
-                    <h3 className="ml-3 text-center nameFont" style={{fontSize: '4vh'}}>
+                    <h3 className="ml-3 text-center nameFont" style={{fontSize: '4.5vh'}}>
                         Jordan           
                     </h3>
                     <h3 className="text-center ml-2 nameFont2" style={{textAlign: 'center', fontSize: '4.5vh'}}>Bell</h3>
