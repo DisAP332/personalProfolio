@@ -125,7 +125,7 @@ export const Home = () => {
 
             {/* begin footer */}
 
-            <Container>
+            <Container className="footer" fluid>
                 <div className="d-flex flex-row justify-content-center">
                     <h1 className="ml-3 text-center nameFont mt-3">
                         Jordan                  
