@@ -13,7 +13,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
       breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
       minBreakpoint="xxs"
     > 
-      <BrowserRouter>
+      <BrowserRouter basename='{process.env.PUBLIC_URL}'>
         <App />
       </BrowserRouter>
     </ThemeProvider>
