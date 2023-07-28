@@ -67,7 +67,8 @@ export const Home = () => {
                             <div className="horizontalLine" style={{marginRight: '20px'}}/>
                             <h2 style={{color: 'white'}} className="nameFont2">Back End</h2>
                         </Col>
-                        <Container className="d-flex iconHelper overflow-auto">
+                        <div className=" d-flex flex-row justify-content-end">
+                            <div className="d-flex iconHelper overflow-auto flex-row">
                                 <img className='iconSizer' src={nodejsIcon} alt='nodeJS Icon'/>
 
                                 <img className='iconSizer' src={expressIcon} alt='Express Icon'/>
@@ -79,7 +80,8 @@ export const Home = () => {
                                 <img className='iconSizer' src={typescriptIcon} alt='Typescript Icon'/>
 
                                 <img className='iconSizer' src={pugIcon} alt='PUG Icon'/>
-                        </Container>
+                            </div>
+                        </div>
                     </Col>
                 </Row>
                 <Row className="mt-4">
