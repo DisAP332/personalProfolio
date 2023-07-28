@@ -62,12 +62,12 @@ export const Home = () => {
                                 />
                         </Container>
                     </Col>
-                    <Col>
+                    <Col className="mt-4">
                         <Col className="d-flex align-items-center justify-content-end">
                             <div className="horizontalLine" style={{marginRight: '20px'}}/>
                             <h2 style={{color: 'white'}} className="nameFont2">Back End</h2>
                         </Col>
-                        <Container className="d-flex iconHelper overflow-auto justify-content-end">
+                        <Container className="d-flex iconHelper overflow-auto">
                                 <img className='iconSizer' src={nodejsIcon} alt='nodeJS Icon'/>
 
                                 <img className='iconSizer' src={expressIcon} alt='Express Icon'/>
@@ -82,7 +82,7 @@ export const Home = () => {
                         </Container>
                     </Col>
                 </Row>
-                <Row>
+                <Row className="mt-4">
                     <Col className="d-flex align-items-center justify-content-center mt-4">
                         <div className="horizontalLine" style={{marginLeft: '20px'}}/>
                         <h2 style={{color: 'white'}} className="nameFont2">Technologies</h2>
@@ -107,7 +107,7 @@ export const Home = () => {
                         <h1 style={{color: 'white', fontSize: 'calc(1rem + 3vw'}} className="nameFont2">About me</h1>
                     <div className="horizontalLine" style={{marginLeft: '20px', width: '450px'}}/>
                 </Col>
-                <Container style={{maxHeight: '200px'}} className="overflow-auto">
+                <Container style={{maxHeight: '200px'}} className="overflow-auto mb-3">
                     <p className="coolFont4" style={{color: 'white'}}>
                         My love and passion in life is for technology. It evelops our world, our every day lives, and 
                         integrates more and more into what it means to be a human of the 21st century. My goal is to be
@@ -121,6 +121,18 @@ export const Home = () => {
 
 
             {/* end about me section */}
+
+            <Container>
+                <div className="d-flex flex-row justify-content-center">
+                    <h1 className="ml-3 text-center nameFont mt-3">
+                        Jordan                  
+                    </h1>
+                    <h1 className="text-center mt-3 ml-2 nameFont2">Bell</h1>
+                    <h1 className="ml-3 text-center nameFont mt-3">
+                        WebDev                  
+                    </h1>
+                </div>
+            </Container>
         </>
     )
 }

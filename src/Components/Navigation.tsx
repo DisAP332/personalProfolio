@@ -1,8 +1,8 @@
 import { Col, Container, Row } from "react-bootstrap";
-// import gitIconLottie from '../Assets/Lotties/github-2.json';
-// import linkedInLottie from '../Assets/Lotties/linkedin.json'
+import gitIconLottie from '../Assets/Lotties/github-2.json';
+import linkedInLottie from '../Assets/Lotties/linkedin.json'
 import 'animate.css'
-
+import { Controls, Player } from "@lottiefiles/react-lottie-player";
 export const Navigation = () => {
 
     // const gitLottieOptions = {
@@ -31,24 +31,26 @@ export const Navigation = () => {
 
                 <Col className="d-flex justify-content-center d-md-none">
                         <a href={'https://github.com/DisAP332'} target="_blank">
-                            {/* <Lottie 
-                            isClickToPauseDisabled={true}
-                            options={gitLottieOptions}
-                            height={50}
-                            width={50}
-                            /> */}
+                        <Player
+                        autoplay
+                        loop={true}
+                        src={gitIconLottie}
+                        style={{ height: '50px', width: '50px' }}
+                        >
+                        </Player>
                         </a>
                     <h1 className="ml-3 text-center nameFont mt-3">
                         Jordan                  
                     </h1>
                     <h1 className="text-center mt-3 ml-2 nameFont2">Bell</h1>
                     <a href={'https://linkedin.com/in/jordan-bell-135205251/'} target="_blank">
-                        {/* <Lottie 
-                        isClickToPauseDisabled={true}
-                        options={linkedInLottieOptions}
-                        height={50}
-                        width={50}
-                        /> */}
+                        <Player
+                        autoplay
+                        loop={true}
+                        src={linkedInLottie}
+                        style={{ height: '50px', width: '50px' }}
+                        >
+                        </Player>
                     </a>
                 </Col>
 
@@ -66,20 +68,22 @@ export const Navigation = () => {
                         <Col className="d-flex justify-content-end align-items-center mt-1">
                             <div className="d-flex">
                                 <a href={'https://github.com/DisAP332'} target="_blank">
-                                    {/* <Lottie 
-                                    isClickToPauseDisabled={true}
-                                    options={gitLottieOptions}
-                                    height={35}
-                                    width={35}
-                                    /> */}
+                                <Player
+                                autoplay
+                                loop={true}
+                                src={gitIconLottie}
+                                style={{ height: '32px', width: '32px' }}
+                                >
+                                </Player>
                                 </a>
                                 <a href={'https://linkedin.com/in/jordan-bell-135205251/'} target="_blank">
-                                    {/* <Lottie 
-                                    isClickToPauseDisabled={true}
-                                    options={linkedInLottieOptions}
-                                    height={38}
-                                    width={38}
-                                    /> */}
+                                <Player
+                                autoplay
+                                loop={true}
+                                src={linkedInLottie}
+                                style={{ height: '35px', width: '35px' }}
+                                >
+                                </Player>
                                 </a>
                             </div>
                         </Col>

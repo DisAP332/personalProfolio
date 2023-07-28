@@ -209,6 +209,18 @@ h1 {
   transform: translateY(-10px);
 }
 
+.iconHelper::-webkit-scrollbar {
+  background-color: rgba(255, 255, 255, 0);
+  height: 1vh;
+}
+
+.iconHelper::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #737272;
+  border: 1px solid #000;
+}
+
 .row {
   margin-right: 0px;
 }
