@@ -88,7 +88,9 @@ export const Navigation = () => {
                             </div>
                         </Col>
                         <Col className="d-flex align-items-center mt-1">
-                            <button className="hireMeButton">Hire me?</button>
+                            <a href="mailto:disap332@gmail.com">
+                            <button className="hireMeButton" >Hire me?</button>
+                            </a>
                         </Col>
                     </Row>
                 </Col>
