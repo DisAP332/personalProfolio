@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <div className="App animate__animated animate__fadeIn">
-        <div className="background App">
+        <div className="background">
           <Navigation />
           <Routes>
             <Route path='/' element={<Home />} />

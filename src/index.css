@@ -32,6 +32,8 @@ h2, h3 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --BellRed: rgb(240, 37, 37)
 }
 
 h1 {
@@ -41,7 +43,10 @@ h1 {
 
 .App {
   width: 100vw;
-  height: 100vh;
+}
+
+.paddingBottom {
+  height: 200px;
 }
 
 /* Begin fonts */
@@ -81,7 +86,7 @@ h1 {
 
 .nameFont2 {
   font-family: coolFont3;
-  color: rgb(240, 37, 37)
+  color: var(--BellRed)
 }
 
 .nameFont {
@@ -96,6 +101,8 @@ h1 {
   background-image: url(./Assets/Images/background.svg);
   background-position: center;
   background-size: cover;
+  background-repeat: repeat-y;
+  height: 100%;
 }
 
 /* end display utilities */
@@ -108,7 +115,7 @@ h1 {
   box-shadow: 0px 0px 0px 0px black;
   border: 2px solid black;
   border-radius: 30px;
-  font-size: 2vh;
+  font-size: 1vw;
   font-family: coolFont3;
   color: white;
   background: linear-gradient(27deg, rgba(236,10,87,1) 30%, rgba(68,157,47,0.7511379551820728) 46%, rgba(81,79,219,0.8995973389355743) 60%, rgba(210,79,219,0.8995973389355743) 80%);
@@ -185,7 +192,7 @@ h1 {
 /* end cool button stuff */
 
 .horizontalLine {
-  background-color: red;
+  background-color: var(--BellRed);
   width: 300px;
   height: 6px;
   border-radius: 5px;
@@ -230,4 +237,15 @@ h1 {
   left: 0;
   bottom: 0;
   background-color: teal;
+}
+
+/* ----- project section -------- */
+
+.projectSnapshot {
+
+  width: 80vw;
+  background-image: url('./Assets/Images/portalfi-screenshot.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 10px solid var(--BellRed);
 }

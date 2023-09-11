@@ -18,6 +18,7 @@ import firebaseIcon from '../Assets/Icons/firebase.svg'
 import webpackIcon from '../Assets/Icons/webpack.svg'
 import adobeIllustratorIcon from '../Assets/Icons/adobe-illustrator.svg'
 import linuxIcon from '../Assets/Icons/linux.svg'
+import portalfiSnapshot from '../Assets/Images/portalfi-screenshot.png'
 
 // end imports of SVG Icons
 
@@ -123,7 +124,42 @@ export const Home = () => {
 
             {/* end about me section */}
 
+            {/* begin projects section */}
+
+            <Container className="transparentBackground">
+                <Col className="d-flex align-items-center justify-content-center">
+                    <div className="horizontalLine" style={{marginRight: '20px', width: '450px'}}/>
+                        <h1 style={{color: 'white', fontSize: 'calc(1rem + 3vw'}} className="nameFont2">Projects</h1>
+                    <div className="horizontalLine" style={{marginLeft: '20px', width: '450px'}}/>
+                </Col>
+                <Row>
+                    <Col>
+                        <img src={portalfiSnapshot} alt='portalfi-snapshot' className="projectSnapshot"/>
+                        <h2 className="coolFont4" style={{color: 'white'}}>portalfi-jbw.com / server.portalfi-jbw.com</h2>
+                        <p className="coolFont4" style={{color: 'white'}}>Portalfi-jbw is a web app for 2 clients i am currently developing a website for. 
+                            I created it to give them a platform to edit their websites data live such as events,
+                            phone number, social links, menu... ect. server.portalfi-jbw.com is the domain that the backend server hosted on a
+                            digital ocean droplet is located. I secured the site with passport and JSON Web Token allowing the users to retrieve their
+                            respective data and prevent unwanted edits by malicious parties. I used Node.js/express to create a RESTful api.  MongoDB is the Database in which all the data is stored.
+                            The server has HTTPS via lets encrypt and NGINX
+                            <br /> ------still in development-----
+                        </p>
+                        <a href="https://github.com/DisAP332/Portalfi-Client" target="_blank">
+                            GitHub Client link
+                        </a>
+                        <a href="https://github.com/DisAP332/Portalfi-Server" target="_blank">
+                            GitHub Client server
+                        </a>
+                    </Col>
+                </Row>
+            </Container>
+
+            {/* begin projects section */}
+
             {/* begin footer */}
+
+            {/* this div is to prevent cutoff by footer*/}
+            <div className="paddingBottom" />
 
             <Container className="footer" fluid>
                 <div className="d-flex flex-row justify-content-center">
