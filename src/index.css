@@ -243,7 +243,7 @@ h1 {
 
 .projectSnapshot {
 
-  width: 80vw;
+  width: 100%;
   background-image: url('./Assets/Images/portalfi-screenshot.png');
   background-size: contain;
   background-repeat: no-repeat;
