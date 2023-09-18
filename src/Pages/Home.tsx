@@ -24,6 +24,9 @@ import viteIcon from "../Assets/Icons/vite-svgrepo-com.svg";
 import tailwindIcon from "../Assets/Icons/tailwind-css.svg";
 import reduxIcon from "../Assets/Icons/redux.svg";
 import jestIcon from "../Assets/Icons/jest-snapshot-svgrepo-com.svg";
+import letsencryptIcon from "../Assets/Icons/letsencrypt.svg";
+import digitalOceanIcon from "../Assets/Icons/digitalocean.svg";
+import nginxIcon from "../Assets/Icons/nginx.svg";
 
 // end imports of SVG Icons
 
@@ -150,6 +153,17 @@ export const Home = () => {
             <img className="iconSizer" src={reduxIcon} alt="Redux Icon" />
             <img className="iconSizer" src={linuxIcon} alt="Linux Icon" />
             <img className="iconSizer" src={jestIcon} alt="Jest Icon" />
+            <img
+              className="iconSizer"
+              src={digitalOceanIcon}
+              alt="Digital Ocean Icon"
+            />
+            <img className="iconSizer" src={nginxIcon} alt="Nginx Icon" />
+            <img
+              className="iconSizer"
+              src={letsencryptIcon}
+              alt="letsEncrypt Icon"
+            />
           </Container>
         </Row>
       </Container>
