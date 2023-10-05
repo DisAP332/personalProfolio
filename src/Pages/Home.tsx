@@ -18,7 +18,6 @@ import firebaseIcon from "../Assets/Icons/firebase.svg";
 import webpackIcon from "../Assets/Icons/webpack.svg";
 import adobeIllustratorIcon from "../Assets/Icons/adobe-illustrator.svg";
 import linuxIcon from "../Assets/Icons/linux.svg";
-import portalfiSnapshot from "../Assets/Images/portalfi-screenshot.png";
 import nextIcon from "../Assets/Icons/next-js-seeklogo.com.svg";
 import viteIcon from "../Assets/Icons/vite-svgrepo-com.svg";
 import tailwindIcon from "../Assets/Icons/tailwind-css.svg";
@@ -27,6 +26,8 @@ import jestIcon from "../Assets/Icons/jest-snapshot-svgrepo-com.svg";
 import letsencryptIcon from "../Assets/Icons/letsencrypt.svg";
 import digitalOceanIcon from "../Assets/Icons/digitalocean.svg";
 import nginxIcon from "../Assets/Icons/nginx.svg";
+import ReactPlayer from "react-player";
+import portalfiVideo from "../Assets/video/portalvid.mp4";
 
 // end imports of SVG Icons
 
@@ -228,39 +229,58 @@ export const Home = () => {
         </Col>
         <Row>
           <Col>
-            <img
+            {/* <img
               src={portalfiSnapshot}
               alt="portalfi-snapshot"
               className="projectSnapshot"
-            />
-            <h2 className="coolFont4" style={{ color: "white" }}>
-              portalfi-jbw.com / server.portalfi-jbw.com
-            </h2>
-            <p className="coolFont4" style={{ color: "white" }}>
-              Portalfi-jbw is a web app for 2 clients i am currently developing
-              a website for. I created it to give them a platform to edit their
-              websites data live such as events, phone number, social links,
-              menu... ect. server.portalfi-jbw.com is the domain that the
-              backend server hosted on a digital ocean droplet is located. I
-              secured the site with passport and JSON Web Token allowing the
-              users to retrieve their respective data and prevent unwanted edits
-              by malicious parties. I used Node.js/express to create a RESTful
-              api. MongoDB is the Database in which all the data is stored. The
-              server has HTTPS via lets encrypt and NGINX
-              <br /> ------still in development-----
-            </p>
-            <a
-              href="https://github.com/DisAP332/Portalfi-Client"
-              target="_blank"
+            /> */}
+            <div className="videoCont">
+              <ReactPlayer url={portalfiVideo} controls={true} />
+            </div>
+            <div
+              className="transparentBackground"
+              style={{ paddingLeft: "20px", textAlign: "center" }}
             >
-              GitHub Client link
-            </a>
-            <a
-              href="https://github.com/DisAP332/Portalfi-Server"
-              target="_blank"
-            >
-              GitHub Client server
-            </a>
+              <h2 className="coolFont4" style={{ color: "white" }}>
+                Website data editing application
+              </h2>
+              <p className="coolFont4" style={{ color: "white" }}>
+                this is an example of the in development full stack application
+                I put together to edit/delete/create data for a live static
+                website. <br /> <br />
+                The Server is done in Typescript with Node-JS, Passport-JS for
+                handling security strategies on login then Bcrypt and
+                JsonWebTokens for encryption / security, this is paired with its
+                MongoDB Atlas Database connection handled via Mongoose. <br />
+                <br />
+                The web app to edit the clients website data is made on NextJS
+                in TypeScript, implementing Tailwind for CSS and Redux for state
+                management. <br />
+                <br />
+                The example website is in the works for a client. It pulls its
+                data from the node-js server hosted on DigitalOcean.
+                <br />
+                <br />
+                Portalfi-jbw is a web app for 2 clients i am currently
+                developing a website for. I made this web application to give
+                them a platform to edit their websites live data such as events,
+                menu, contact-details... ect.
+                <br /> ------still in development----- : UPDATE LOADED: OCT 5TH
+                2023
+              </p>
+              <a
+                href="https://github.com/DisAP332/Portalfi-Client"
+                target="_blank"
+              >
+                GitHub Client link
+              </a>
+              <a
+                href="https://github.com/DisAP332/Portalfi-Server"
+                target="_blank"
+              >
+                GitHub Client server
+              </a>
+            </div>
           </Col>
         </Row>
       </Container>
