@@ -28,13 +28,30 @@ import digitalOceanIcon from "../Assets/Icons/digitalocean.svg";
 import nginxIcon from "../Assets/Icons/nginx.svg";
 import ReactPlayer from "react-player";
 import portalfiVideo from "../Assets/video/portalvid.mp4";
+import SideNavigation from "../Components/SideNavigation";
+import { useRef } from "react";
 
 // end imports of SVG Icons
 
 export const Home = () => {
+  const topRef = useRef(null);
+  const knowledgeRef = useRef(null);
+  const projectsRef = useRef(null);
+  const bottomRef = useRef(null);
+
+  const scrollToSection = (elementRef: any) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behavior: "smooth",
+    });
+  };
+
+  const sections = { topRef, knowledgeRef, projectsRef, bottomRef };
+
   return (
     <>
-      <Container style={{ color: "white" }}>
+      <Container style={{ color: "white" }} ref={topRef}>
+        <SideNavigation scrollTo={scrollToSection} sections={sections} />
         <Row>
           <h2 className="mt-3 coolFont4">Software extraordiare?</h2>
           <div className="d-flex justify-content-end">
@@ -47,7 +64,7 @@ export const Home = () => {
       </Container>
 
       {/* begin skill section */}
-      <Container className="transparentBackground">
+      <Container className="transparentBackground" ref={knowledgeRef}>
         <Row>
           <Col>
             <Col className="d-flex align-items-center">
@@ -210,7 +227,7 @@ export const Home = () => {
 
       {/* begin projects section */}
 
-      <Container className="transparentBackground">
+      <Container className="transparentBackground" ref={projectsRef}>
         <Col className="d-flex align-items-center justify-content-center">
           <div
             className="horizontalLine"
@@ -299,6 +316,7 @@ export const Home = () => {
           <h1 className="ml-3 text-center nameFont mt-3">WebDev</h1>
         </div>
       </Container>
+      <div ref={bottomRef}></div>
     </>
 
     // end footer
