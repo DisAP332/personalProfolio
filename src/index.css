@@ -223,10 +223,12 @@ h1 {
 
 .iconHelper > img {
   margin: 10px;
+  transition-duration: 0.4s;
 }
 
 .iconHelper > img:hover {
   transform: translateY(-10px);
+  transition-duration: 0.3s;
 }
 
 .iconHelper::-webkit-scrollbar {
