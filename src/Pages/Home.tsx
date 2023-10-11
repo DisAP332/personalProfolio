@@ -246,13 +246,55 @@ export const Home = () => {
         </Col>
         <Row>
           <Col>
-            {/* <img
-              src={portalfiSnapshot}
-              alt="portalfi-snapshot"
-              className="projectSnapshot"
-            /> */}
+            <Col className="d-flex align-items-center justify-content-center">
+              <div
+                className="horizontalLine"
+                style={{ marginRight: "20px", width: "450px" }}
+              />
+              <h1
+                style={{ color: "white", fontSize: "calc(1rem + 1vw" }}
+                className="nameFont1"
+              >
+                Portalfi-JBW
+              </h1>
+              <div
+                className="horizontalLine"
+                style={{ marginLeft: "20px", width: "450px" }}
+              />
+            </Col>
             <div className="videoCont">
               <ReactPlayer url={portalfiVideo} controls={true} />
+            </div>
+            <h1 style={{ color: "white" }}>Technology used:</h1>
+            <div
+              className="d-flex justify-content-center"
+              style={{ gap: "20px" }}
+            >
+              <img className="iconSizer" src={nextIcon} alt="Next Icon" />
+              <img className="iconSizer" src={reduxIcon} alt="redux Icon" />
+              <img
+                className="iconSizer"
+                src={typescriptIcon}
+                alt="typescript Icon"
+              />
+              <img className="iconSizer" src={nodejsIcon} alt="nodejs Icon" />
+              <img
+                className="iconSizer"
+                src={expressIcon}
+                alt="expressIcon Icon"
+              />
+              <img className="iconSizer" src={mongodbIcon} alt="mongodb Icon" />
+              <img className="iconSizer" src={nginxIcon} alt="Next Icon" />
+              <img
+                className="iconSizer"
+                src={digitalOceanIcon}
+                alt="Next Icon"
+              />
+              <img
+                className="iconSizer"
+                src={letsencryptIcon}
+                alt="Next Icon"
+              />
             </div>
             <div
               className="transparentBackground"
@@ -285,18 +327,32 @@ export const Home = () => {
                 <br /> ------still in development----- : UPDATE LOADED: OCT 5TH
                 2023
               </p>
-              <a
-                href="https://github.com/DisAP332/Portalfi-Client"
-                target="_blank"
-              >
-                GitHub Client link
-              </a>
-              <a
-                href="https://github.com/DisAP332/Portalfi-Server"
-                target="_blank"
-              >
-                GitHub Client server
-              </a>
+              <div className="d-flex justify-content-around">
+                <a
+                  href="https://github.com/DisAP332/Portalfi-Client"
+                  target="_blank"
+                >
+                  GitHub Client link
+                </a>
+                <div style={{ color: "white" }}>
+                  <p>Link to Portalfi:</p>
+                  <a href="https://portalfi-jbw.com/" target="_blank">
+                    portalfi-jbw.com
+                  </a>
+                </div>
+                <div style={{ color: "white" }}>
+                  <p>Link to Pandemonium website:</p>
+                  <a href="https://pandemoniumky.com" target="_blank">
+                    pandemoniumky.com
+                  </a>
+                </div>
+                <a
+                  href="https://github.com/DisAP332/Portalfi-Server"
+                  target="_blank"
+                >
+                  GitHub Client server
+                </a>
+              </div>
             </div>
           </Col>
         </Row>
