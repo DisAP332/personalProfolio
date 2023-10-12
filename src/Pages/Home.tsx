@@ -209,16 +209,17 @@ export const Home = () => {
           style={{ maxHeight: "200px" }}
           className="overflow-auto mb-3"
         >
-          <p className="coolFont4" style={{ color: "white" }}>
+          <p
+            className="coolFont4"
+            style={{ color: "white", textAlign: "center" }}
+          >
             My love and passion in life are for technology. It envelops our
             world, our every-day lives, and integrates more and more into what
-            it means to be a human in the 21st century. My goal is to be a hand
-            in the evolution of technology and, in turn, the evolution of man
-            alongside it! As our technology grows, we unlock exciting new ways
-            to interact with the world around us. It is the catalyst that makes
-            The impossible - possible! I am dedicated and enamored by the
-            constant flow of new challenges and new skills to master, I will
-            never stop growing and learning; it's what I love to do!
+            it means to be a human in the 21st century. As our technology grows,
+            we unlock exciting new ways to interact with the world around us. It
+            is the catalyst that makes The impossible - possible! I am enamored
+            by the constant flow of new challenges and new skills to master, I
+            will never stop growing and learning; it's what I love to do!
           </p>
         </Container>
       </Container>
@@ -352,6 +353,14 @@ export const Home = () => {
                 >
                   GitHub Client server
                 </a>
+              </div>
+              <div style={{ color: "white", paddingBottom: "100px" }}>
+                <h1>Try it out!</h1>
+                <h2>
+                  Username: pandemonium Password: pass. Edit the data on
+                  portalfi-jbw.com !Make sure to click publish! Then see the
+                  data updated live on pandemoniumky.com!
+                </h2>
               </div>
             </div>
           </Col>
