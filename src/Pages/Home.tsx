@@ -29,6 +29,8 @@ import nginxIcon from "../Assets/Icons/nginx.svg";
 import ReactPlayer from "react-player";
 import portalfiVideo from "../Assets/video/portalvid.mp4";
 import SideNavigation from "../Components/SideNavigation";
+import tiktactoe from "../Assets/Icons/game.svg";
+import gameCodeIcon from "../Assets/Icons/code.svg";
 import { useRef } from "react";
 
 // end imports of SVG Icons
@@ -225,7 +227,58 @@ export const Home = () => {
       </Container>
 
       {/* end about me section */}
-
+      {/* begin games section */}
+      <Container className="transparentBackground mt-5 pb-3 mb-5">
+        <Col className="d-flex align-items-center justify-content-center">
+          <div
+            className="horizontalLine"
+            style={{ marginRight: "20px", width: "450px" }}
+          />
+          <h1
+            style={{ color: "white", fontSize: "calc(1rem + 3vw" }}
+            className="nameFont2"
+          >
+            Games
+          </h1>
+          <div
+            className="horizontalLine"
+            style={{ marginLeft: "20px", width: "450px" }}
+          />
+        </Col>
+        <Container className="mb-5">
+          <Row>
+            <Col>
+              <div className="gameContainer">
+                <div>
+                  <a
+                    href="https://disap332.github.io/ticTakToe/"
+                    target="_blank"
+                  >
+                    <img
+                      className="iconSizer gameLeft"
+                      src={tiktactoe}
+                      alt="tik tac toe Icon"
+                    />
+                    <h1>Tic Tac Toe</h1>
+                  </a>
+                  <a
+                    href="https://github.com/DisAP332/ticTakToe"
+                    target="_blank"
+                  >
+                    <img
+                      className="iconSizer gameRight"
+                      src={gameCodeIcon}
+                      alt="tik tac toe Icon"
+                    />
+                  </a>
+                </div>
+              </div>
+            </Col>
+            <Col />
+          </Row>
+        </Container>
+      </Container>
+      {/* end games section */}
       {/* begin projects section */}
 
       <Container className="transparentBackground" ref={projectsRef}>
